@@ -46,4 +46,6 @@ for line in sys.stdin:
         big_spender_id = customer_id
     if customer_id_to_sum[customer_id] == big_spender_value:
         big_spenders.add(customer_id)
-print(month + "," + country + ":" + format_set(big_spenders))
+
+if current_key != None:
+    print(month + "," + country + ":" + format_set(big_spenders))

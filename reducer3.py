@@ -61,4 +61,5 @@ for line in sys.stdin:
         if not id in suggestion_count:
             suggestion_count[id] = 0
         suggestion_count[id] = suggestion_count[id] + 1
-print_result()
+if current_key != None:
+  print_result()

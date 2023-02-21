@@ -17,4 +17,5 @@ for line in sys.stdin:
         current_key = key
         cnt = 1
 
-print(current_key + ":" + str(cnt))
+if current_key != None:
+    print(current_key + ":" + str(cnt))
