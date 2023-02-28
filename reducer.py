@@ -43,7 +43,6 @@ for line in sys.stdin:
     if customer_id_to_sum[customer_id] > big_spender_value:
         big_spenders = set()
         big_spender_value = customer_id_to_sum[customer_id]
-        big_spender_id = customer_id
     if customer_id_to_sum[customer_id] == big_spender_value:
         big_spenders.add(customer_id)
 
